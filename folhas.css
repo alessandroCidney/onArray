@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Source Code Pro', sans-serif;
+}
+
+body {
+    margin-top: 70px;
+}
+
+.header {
+    display: block;
+    position: fixed;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: var(--color-rich-black);
+    color: #FFF;
+
+
+    padding-left: 30px;
+    padding-top: 23px;
+    transform: translateY(-100%);
+
+    z-index: 1;
+}
+
+
+.section-one {
+    display: block;
+
+    width: 100%;
+    height: 80vh;
+    
+    background: url("images/fundoMontanhas.jpg") repeat fixed 100%;
+    color: white;
+
+    line-height: 400px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30pt;
+}
+
+.section-one h1 {
+    display: block;
+    position: absolute;
+
+    width: 100%;
+    height: 80vh;
+
+    background-color: rgba(0, 0, 0, 0.479);
+    letter-spacing: 3px;
+}
+
+.section-one-h1::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: letterAnimation .7s infinite;
+}
+
+@keyframes letterAnimation {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+}
+
+.section-before-two {
+    display: block;
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 700px;
+    padding-top: 50vh;
+    padding-right: 10%;
+
+    background-color: var(--color-ghost-white);
+    color: rgb(0, 0, 0);
+
+    text-align: right;
+    font-size: 10pt;
+}
+
+.section-before-two h2 {
+    display: block;
+
+    right: 0;
+}
+
+.section-before-two-image {
+    transform: translateY(-50%);
+    display: block;
+    width: 20%;
+    left: 10%;
+    position: absolute;
+    border-radius: 15px;
+    border: 1px white solid;
+}
+
+.section-two {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 700px;
+    
+    background-color: var(--color-cerulian-blue);
+    color: white;
+
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+    font-weight: bolder;
+    font-size: 10pt;
+}
+
+.section-two-li {
+    display: inline-block;
+    position: relative;
+
+    padding: 80px 50px;
+    margin: 10% 30px;
+
+    width: 20%;
+    height: 330px;
+
+    border: 1px white solid;
+
+}
+
+.section-three {
+    display: block;
+    position: relative;
+
+    width: 100%;
+    height: 700px;
+    padding-top: 20px;
+
+    background-color: var(--color-beige);
+
+    text-align: center;
+
+}
+
+.section-three-control-painel {
+    display: block;
+    position: absolute;
+    width: 80%;
+    height: 670px;
+
+    padding: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+    background-color: white;
+    color: black;
+    box-shadow: 1px 1px 5px black;
+
+    font-weight: bolder;
+    font-size: 10pt;
+
+}
+
+.section-three-arrays {
+    display: block;
+    width: 100%;
+    height: 300px;
+
+    background-color: black;
+    color: white;
+
+    border: 1px black solid;
+    padding-top: 120px;
+    font-weight: bolder;
+
+    transition: background 1s;
+}
+
+.section-three-arrays::after {
+    content: '|';
+    margin-left: 5px;
+    opacity: 1;
+    animation: letterAnimation .7s infinite;
+}
+
+.section-three-ul {
+    text-align: justify;
+}
+
+.section-three-control {
+    display: inline-block;
+    position: relative;
+    height: 200px;
+    width: 30%;
+
+    margin-top: 60px;
+    padding: 40px;
+
+    border: 1px black solid;
+    list-style: none;
+}
+
+.section-three-ul::after { /*Cria um item oculto depois do ul*/
+    display: inline-block;
+    position: relative;
+    content: '';
+    width: 100%;
+}
+
+.input {
+    display: block;
+    position: absolute;
+}
+
+.input-submit {
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px black;
+
+    padding: 5px;
+    width: 70%;
+
+    transition: background 0.5s linear; /*Monitora quando o background é alterado e aplica uma transição linear*/
+}
+
+.input-submit:hover {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+}
+
+.input-delete-item {
+    margin-bottom: 50px;
+}
+
+.input-text {
+    width: 70%;
+
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+
+.radio-div {
+    line-height: 40px;
+}
+
+.section-two-li p {
+    display: block;
+    padding-top: 40%;
+    font-size: 50pt;
+}
+
+.footer {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 70px;
+
+    background-color: #0d1321;
+    color: #FFF;
+
+    text-align: center;
+    padding-top: 23px;
+}
